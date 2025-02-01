@@ -4,49 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <title>profile-card</title>
 </head>
 <body>
     <main>
         <section>
-            <!-- Profile Picture data-testid="profilePicture"-->
-            <figure>
-                <img src="" alt="" srcset="">
-                <figcaption>
-
-                </figcaption>
-            </figure>
+            <!-- Header -->
+            <div class="profile">
+                <!-- Profile Picture data-testid="profilePicture"-->
+                <img src="./assets/img/profile-picture.png" alt="Ayodeji Oni's Profile Picture" data-testid="profilePicture">
             
-            <!-- Full Name data-testid="fullName"-->
-             <p>Oni Ayodeji Mahmuud</p>
+                <div class="profile-aside">
+                    <!-- Full Name data-testid="fullName"-->
+                    <h3 data-testid="fullName">Oni Ayodeji Mahmuud</h3>
 
-            <!-- Job Title data-testid="jobTitle"-->
-            <p>Aspiring Frontend Developer.</p>
+                    <!-- Job Title data-testid="jobTitle"-->
+                    <p data-testid="jobTitle">Software Engineer</p>
+                </div>
+            </div>
 
-            <!-- Bio data-testid="shortBio"-->
-            <p>Bio</p>
-            <p>I am a detail-oriented professional experienced in data entry, 
-                network and IT support, Python, JavaScript, and mobile application 
-                development with Flutter. I possess technical skills in troubleshooting 
-                and resolving network and IT related issues, basic security protocols, 
-                hands-on experience with IoT systems integration and hardware interfacing. 
-                I am an adept problem solver, and I collaborate effectively in diverse teams. 
-                I am passionate about Cybersecurity, Networking and IT Support, and Software Development.</p>
+            <!-- Bio section -->
+            <div class="bio-section">
+                <!-- Bio data-testid="shortBio"-->
+                <p data-testid="shortBio">Detail-oriented IT professional experienced in data entry, 
+                    network and IT support, and Python scripting.</p>
+            </div>      
+
+            <div class="centre-text">
+                <!-- Current Location data-testid="currentLocation"-->
+                <p data-testid="currentLocation">Lagos, Nigeria</p>
+
+                <!-- Email Address data-testid="emailAddress"-->
+                <a href="mailto:ayodejioni1505@mail.com" data-testid="emailAddress">ayodejioni1505@gmail.com</a>
+            </div>
             
-            <!-- Current Location data-testid="currentLocation"-->
-            <p>Lagos, Nigeria</p>
-
-            <!-- Email Address data-testid="emailAddress"-->
-            <p>ayodejioni1505@gmail.com</p>
-
             <!-- Social Links -->
-            <p>LinkedIn</p>
-            <p>GitHub</p>
-            <p>Twitter</p>
+            <div data-testid="socialLinks" class="centre-text social-links">
+                <a href="https://www.linkedin.com/in/ayodeji-oni/">LinkedIn</a> |
+                <a href="https://github.com/Ayo-Oni-515">GitHub</a> |
+                <a href="https://x.com/Ayodeji_515?t=rKOK5WQgFCM88u9mQBFKaQ&s=09">Twitter</a>
+            </div>
 
-            <!-- Current time in UTC -->
-            <p>Time in UTC</p>
+            <!-- Current time in UTC data-testid="currentTimeUTC"-->
+            <p id="utc-time" data-testid="currentTimeUTC" class="centre-text"></p>
         </section>
     </main>    
 </body>

@@ -1,0 +1,72 @@
+/* Body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    color: #ffffff;
+    line-height: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centre-text {
+    text-align: center;
+}
+
+/* Profile card styling */ 
+section {
+    background-color: #7474d4;
+    margin: auto;
+    border: 3px outset #6968b6;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+
+
+/* Header styling */
+.profile {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.profile img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;  
+}
+    
+
+.profile-aside h3, .profile-aside p{   
+    margin-left: 20%;
+}
+
+
+/* Bio section styling */
+.bio-section {
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+
+/* Social links styling */
+/* .social-links {
+
+} */
+ 
+
+/* Links styling */
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffcc00;
+}
